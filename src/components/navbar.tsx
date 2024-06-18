@@ -8,16 +8,15 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="bg-slate-300_ flex items-center justify-between px-5 py-6 lg:px-44 lg:pt-24">
-        {/* LOGO */}
+      <nav className="flex items-center justify-between px-5 py-6 md:px-44 md:pt-24">
+        {/* --- LOGO --- */}
         <div>
           <Image src="/images/logo.svg" alt="logo" width={65} height={40} />
         </div>
 
-        {/* Navigation */}
-
+        {/* --- Navigation --- */}
         {/* Desktop */}
-        <div className="hidden gap-6 lg:flex">
+        <div className="hidden gap-6 md:flex">
           <p className="text-slate-600 hover:text-rose-500">Home</p>
           <p className="text-slate-600 hover:text-rose-500">New</p>
           <p className="text-slate-600 hover:text-rose-500">Popular</p>
@@ -26,7 +25,6 @@ export default function Navbar() {
         </div>
 
         {/* Mobile */}
-
         {!menuOpen && (
           // menu when closed
           <Image
@@ -35,13 +33,13 @@ export default function Navbar() {
             width={40}
             height={17}
             onClick={() => setMenuOpen(true)}
-            className="lg:hidden"
+            className="md:hidden"
           />
         )}
 
         {menuOpen && (
           // overlay background
-          <div className="absolute left-0 top-0 -z-10 h-screen w-screen bg-slate-950/30 transition-all duration-500" />
+          <div className="absolute left-0 top-0 z-0 h-screen w-screen bg-slate-950/40 transition-all duration-500" />
         )}
         {menuOpen && (
           // menu when open
