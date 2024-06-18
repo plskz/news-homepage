@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="flex items-center justify-between px-5 py-6 md:px-44 md:pt-24">
+      <nav className="flex items-center justify-between px-5 py-6 md:px-44 md:pt-20">
         {/* --- LOGO --- */}
         <div>
           <Image src="/images/logo.svg" alt="logo" width={65} height={40} />
@@ -17,11 +17,11 @@ export default function Navbar() {
         {/* --- Navigation --- */}
         {/* Desktop */}
         <div className="hidden gap-6 md:flex">
-          <p className="text-slate-600 hover:text-rose-500">Home</p>
-          <p className="text-slate-600 hover:text-rose-500">New</p>
-          <p className="text-slate-600 hover:text-rose-500">Popular</p>
-          <p className="text-slate-600 hover:text-rose-500">Trending</p>
-          <p className="text-slate-600 hover:text-rose-500">Categories</p>
+          <p className="hover:text-primary-20 text-neutral-30">Home</p>
+          <p className="hover:text-primary-20 text-neutral-30">New</p>
+          <p className="hover:text-primary-20 text-neutral-30">Popular</p>
+          <p className="hover:text-primary-20 text-neutral-30">Trending</p>
+          <p className="hover:text-primary-20 text-neutral-30">Categories</p>
         </div>
 
         {/* Mobile */}
