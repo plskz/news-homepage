@@ -8,7 +8,8 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="flex items-center justify-between px-5 py-6 md:px-44 md:pt-20">
+      {/* old: lg:px-44 lg:pt-20 */}
+      <nav className="flex items-center justify-between px-5 py-6 sm:px-8 sm:py-9">
         {/* --- LOGO --- */}
         <div>
           <Image src="/images/logo.svg" alt="logo" width={65} height={40} />

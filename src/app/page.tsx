@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="grid gap-10 px-5 sm:px-8 sm:py-9 md:grid-cols-3">
         <Hero />
         <New />
       </main>

@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="px-5 md:px-44">
+    // <section className="px-5 md:px-44">
+    <section className="md:col-span-2">
       <div className="flex items-center justify-center">
         <Image
           src="/images/web-3-mobile.jpg"
