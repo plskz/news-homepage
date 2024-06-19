@@ -32,7 +32,7 @@ export default function Hero() {
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
-          <button className="w-40 bg-primary-20 px-4 py-3 font-bold uppercase tracking-wider text-neutral-40">
+          <button className="w-40 bg-primary-20 px-4 py-3 font-bold uppercase tracking-wider text-neutral-40 hover:bg-neutral-40 hover:text-neutral-10">
             Read more
           </button>
         </div>

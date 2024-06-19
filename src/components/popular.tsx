@@ -41,7 +41,9 @@ function Card({
       </div>
       <div className="flex w-[70%] flex-col gap-1">
         <p className="text-2xl font-bold text-primary-20">{index}</p>
-        <p className="font-bold text-neutral-40">{title}</p>
+        <p className="cursor-pointer font-bold text-neutral-40 hover:text-primary-20">
+          {title}
+        </p>
         <p className="text-neutral-30 lg:text-sm">{description}</p>
       </div>
     </div>

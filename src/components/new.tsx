@@ -7,7 +7,7 @@ export default function New() {
       <div className="divide-neutral-20/60 divide-y-[0.5px]">
         {latest.map((item, index) => (
           <div key={index} className="py-6">
-            <h3 className="text-lg font-bold">{item.title}</h3>
+            <h3 className="text-lg font-bold cursor-pointer hover:text-primary-10">{item.title}</h3>
             <p className="text-neutral-20 text-sm">{item.description}</p>
           </div>
         ))}
