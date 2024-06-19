@@ -36,7 +36,7 @@ function Card({
           alt={title}
           width={200}
           height={254}
-          className="h-full bg-red-500"
+          className="h-full"
         />
       </div>
       <div className="flex w-[70%] flex-col gap-1">
