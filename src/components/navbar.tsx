@@ -1,5 +1,6 @@
 "use client";
 
+import { navLinks } from "@/app/data";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -8,8 +9,7 @@ export default function Navbar() {
 
   return (
     <header>
-      {/* old: lg:px-44 lg:pt-20 */}
-      <nav className="flex items-center justify-between px-5 py-6 sm:px-8 sm:py-9">
+      <nav className="flex items-center justify-between px-5 py-6 lg:pb-3">
         {/* --- LOGO --- */}
         <div>
           <Image src="/images/logo.svg" alt="logo" width={65} height={40} />
@@ -17,12 +17,15 @@ export default function Navbar() {
 
         {/* --- Navigation --- */}
         {/* Desktop */}
-        <div className="hidden gap-6 md:flex">
-          <p className="hover:text-primary-20 text-neutral-30">Home</p>
-          <p className="hover:text-primary-20 text-neutral-30">New</p>
-          <p className="hover:text-primary-20 text-neutral-30">Popular</p>
-          <p className="hover:text-primary-20 text-neutral-30">Trending</p>
-          <p className="hover:text-primary-20 text-neutral-30">Categories</p>
+        <div className="hidden gap-6 md:flex md:gap-8">
+          {navLinks.map(({ title }) => (
+            <p
+              key={title}
+              className="cursor-pointer text-neutral-30 hover:text-primary-20"
+            >
+              {title}
+            </p>
+          ))}
         </div>
 
         {/* Mobile */}
@@ -55,11 +58,9 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col gap-6 pt-14">
-              <p>Home</p>
-              <p>New</p>
-              <p>Popular</p>
-              <p>Trending</p>
-              <p>Categories</p>
+              {navLinks.map(({ title }) => (
+                <p key={title}>{title}</p>
+              ))}
             </div>
           </div>
         )}
