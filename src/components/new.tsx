@@ -2,13 +2,15 @@ import { latest } from "@/app/data";
 
 export default function New() {
   return (
-    <section className="bg-neutral-40 text-neutral-10 flex flex-col px-4 pt-6">
-      <h2 className="text-primary-10 text-4xl font-bold">New</h2>
-      <div className="divide-neutral-20/60 divide-y-[0.5px]">
+    <section className="flex flex-col bg-neutral-40 px-4 pt-6 text-neutral-10">
+      <h2 className="text-4xl font-bold text-primary-10">New</h2>
+      <div className="divide-y-[0.5px] divide-neutral-20/60">
         {latest.map((item, index) => (
           <div key={index} className="py-6">
-            <h3 className="text-lg font-bold cursor-pointer hover:text-primary-10">{item.title}</h3>
-            <p className="text-neutral-20 text-sm">{item.description}</p>
+            <h3 className="cursor-pointer text-lg font-bold hover:text-primary-10">
+              {item.title}
+            </h3>
+            <p className="text-sm text-neutral-20">{item.description}</p>
           </div>
         ))}
       </div>
