@@ -6,6 +6,7 @@ export default function Hero() {
     <section className="md:col-span-2">
       <div className="flex items-center justify-center">
         <Image
+          priority
           src="/images/web-3-mobile.jpg"
           alt="Web 3"
           width={686}
@@ -13,6 +14,7 @@ export default function Hero() {
           className="bg-cover md:hidden"
         />
         <Image
+          priority
           src="/images/web-3-desktop.jpg"
           alt="Web 3"
           width={1460}
